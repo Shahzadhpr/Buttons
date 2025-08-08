@@ -76,11 +76,11 @@ table {
 :root {
     --primery-color: #1D2939;
     --secondery-color: #FFFFFF;
-    --btn1-tf: cubic-bezier(0.19, 1, 0.22, 1); /* اصلاح شده به 4 مقدار */
-    --btn2-tf: cubic-bezier(0.86, 0, 0.07, 1); /* اصلاح شده به 4 مقدار */
-    --btn3-tf: cubic-bezier(0.23, 1, 0.32, 1); /* اصلاح شده به 4 مقدار */
+    --btn1-tf: cubic-bezier(0.19, 1, 0.22, 1); 
+    --btn2-tf: cubic-bezier(0.86, 0, 0.07, 1);
+    --btn3-tf: cubic-bezier(0.23, 1, 0.32, 1); 
     --btn4-tf: cubic-bezier(0.45, 0.05, 0.55, 0.95);
-    --btn5-tf: cubic-bezier(0.17, 0.84, 0.44, 1); /* اصلاح شده به 4 مقدار */
+    --btn5-tf: cubic-bezier(0.17, 0.84, 0.44, 1); 
 }
 
 html {
