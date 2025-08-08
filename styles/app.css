@@ -163,17 +163,158 @@ body {
 /* button-3 */
 
 .btn-3 {
+	background-color: var(--secondery-color);
+	color: var(--primery-color);
+}
 
+
+.btn-3:hover::after,
+.btn-3:hover::before {
+	height: 100%;
+}
+
+.btn-3::after,
+.btn-3::before {
+	content: '';
+	position: absolute;
+	width: .1rem;
+	height: 0;
+	background-color: var(--primery-color);
+	transition: all 500ms var(--btn3-tf);
+}
+
+.btn-3::after {
+	right: 0;
+	bottom: 0;
+}
+
+.btn-3::before {
+	left: 0;
+	top: 0;
+}
+
+.btn-3__overlay {
+	color: var(--primery-color);
+	display: block;
+	line-height: 5rem;
+	inset: 0;
+}
+
+.btn-3__overlay:hover::after,
+.btn-3__overlay:hover::before {
+	width: 100%;
+}
+
+.btn-3__overlay::after,
+.btn-3__overlay::before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: .09rem;
+	background-color: var(--primery-color);
+	transition: all 500ms var(--btn3-tf) 500ms;
+}
+
+.btn-3__overlay::after {
+	left: 0;
+	top: 0;
+}
+
+.btn-3__overlay::before {
+	right: 0;
+	bottom: 0;
 }
 
 /* button-4 */
 
 .btn-4 {
+	background-color: var(--secondery-color);
+	color: var(--primery-color);
+}
 
+
+.btn-4:hover::after,
+.btn-4:hover::before {
+	height: 50%;
+}
+
+.btn-4::after,
+.btn-4::before {
+	content: '';
+	position: absolute;
+	width: .09rem;
+	height: 0;
+	background-color: var(--primery-color);
+	transition: all 160ms var(--btn3-tf);
+}
+
+.btn-4::after {
+	right: 0;
+	bottom: 0;
+}
+
+.btn-4::before {
+	left: 0;
+	top: 0;
+}
+
+.btn-4__overlay {
+	color: var(--primery-color);
+	display: block;
+	line-height: 5rem;
+	inset: 0;
+}
+
+.btn-4__overlay:hover::after,
+.btn-4__overlay:hover::before {
+	width: 25%;
+}
+
+.btn-4__overlay::after,
+.btn-4__overlay::before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: .09rem;
+	background-color: var(--primery-color);
+	transition: all 160ms var(--btn4-tf);
+}
+
+.btn-4__overlay::after {
+	left: 0;
+	top: 0;
+}
+
+.btn-4__overlay::before {
+	right: 0;
+	bottom: 0;
 }
 
 /* button-5 */
 
 .btn-5 {
+	border: 1px solid var(--primery-color);
+	background-color: var(--secondery-color);
+	color: var(--primery-color);
+}
 
+.btn-5:hover::after {
+	transform: scale(15);
+}
+
+.btn-5::after {
+    content: '';
+    position: absolute;
+    left: -2.5rem;
+    bottom: -2.5rem;
+    width: 2.5rem;
+    height: 1.6rem;
+    border-radius: 100%;
+    background-color: var(--primery-color);
+    transition: all 500ms var(--btn5-tf);
+    z-index: 1;
+}
+
+.btn-5__overlay {
+    z-index: 2;
 }
