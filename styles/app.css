@@ -177,7 +177,7 @@ body {
 .btn-3::before {
 	content: '';
 	position: absolute;
-	width: .1rem;
+	width: .08rem;
 	height: 0;
 	background-color: var(--primery-color);
 	transition: all 500ms var(--btn3-tf);
