@@ -1,0 +1,179 @@
+/*
+=========
+  Fonts
+=========
+*/
+@font-face {
+    font-family: "Roboto Bold";
+    src: url(../fonts/Roboto-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto Medium";
+    src: url(../fonts/Roboto-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto Regular";
+    src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+}
+
+/*
+=============
+  Reest Css
+=============
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+=============
+  Styles Css
+=============
+*/
+
+:root {
+    --primery-color: #1D2939;
+    --secondery-color: #FFFFFF;
+    --btn1-tf: cubic-bezier(0.19, 1, 0.22, 1); /* اصلاح شده به 4 مقدار */
+    --btn2-tf: cubic-bezier(0.86, 0, 0.07, 1); /* اصلاح شده به 4 مقدار */
+    --btn3-tf: cubic-bezier(0.23, 1, 0.32, 1); /* اصلاح شده به 4 مقدار */
+    --btn4-tf: cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    --btn5-tf: cubic-bezier(0.17, 0.84, 0.44, 1); /* اصلاح شده به 4 مقدار */
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 10px;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+    font-family: "Roboto Regular", sans-serif;
+	font-size: 1.6rem;
+	line-height: 1.5rem;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	gap: 5rem;
+}
+
+/* button */
+
+.btn {
+	width: 14rem;
+	height: 5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	outline: none;
+	color: var(--secondery-color);
+	background-color: var(--primery-color);
+	border: 1px solid inherit;
+	cursor: pointer;
+	transition: all 640ms var(--btn1-tf);
+	position: relative;
+	overflow: hidden;
+}
+
+/* button-1 */
+
+.btn-1:hover {
+	color: var(--primery-color);
+	background-color: var(--secondery-color);
+	border: 1px solid var(--primery-color);
+	box-shadow: 4px 4px 0 var(--primery-color);
+}
+
+/* button-2 */
+
+.btn-2:hover .btn-2__overlay {
+  transform: translateX(0);
+}
+
+.btn-2__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: .1rem;
+  color: var(--primery-color);
+  background-color: var(--secondery-color);
+  border-top: 1px solid var(--primery-color);
+  border-bottom: 1px solid var(--primery-color);
+  transform: translateX(-100%);
+  transition: all 180ms var(--btn2-tf);
+}
+
+.btn-2 svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* button-3 */
+
+.btn-3 {
+
+}
+
+/* button-4 */
+
+.btn-4 {
+
+}
+
+/* button-5 */
+
+.btn-5 {
+
+}
