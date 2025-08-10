@@ -302,6 +302,10 @@ body {
 	transform: scale(15);
 }
 
+.btn-5:hover {
+	color: var(--secondery-color);
+}
+
 .btn-5::after {
     content: '';
     position: absolute;
